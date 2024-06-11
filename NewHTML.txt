@@ -1,0 +1,13 @@
+<p><!DOCTYPE html> <html lang=&quot;en&quot;> <head>  <meta charset=&quot;UTF-8&quot;>  <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>  <title>Hoodieboix 2D Animation Portfolio</title>  <style>  body {  margin: 0;  font-family: Arial, sans-serif;  background-color: #000;  color: #fff;  overflow-x: hidden;  }  header {  text-align: center;  padding: 50px 0;  background: linear-gradient(45deg, #ff0000, #ff8000);  }  header h1 {  font-size: 3em;  margin: 0;  }  header p {  font-size: 1.5em;  margin: 0;  }  section {  padding: 50px 20px;  position: relative;  }  .video-container {  width: 100%;  max-width: 800px;  margin: 20px auto;  overflow: hidden;  border-radius: 10px;  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);  }  video {  width: 100%;  display: block;  }  .fade-in {  opacity: 0;  transform: translateY(20px);  transition: opacity 1s ease-out, transform 1s ease-out;  }  .fade-in.visible {  opacity: 1;  transform: translateY(0);  }  </style> </head> <body></p>
+
+<p><header>  <h1>Hoodieboix</h1>  <p>2D Animation Portfolio</p> </header></p>
+
+<p><section id=&quot;about&quot;>  <h2>About Me</h2>  <p>I am a passionate 2D animator who has worked on multiple popular anime shows, including Boruto, One Piece, Jujutsu Kaisen, Undead Unluck, and Nier Automata.</p>  <div class=&quot;video-container fade-in&quot;>  <video src=&quot;clip_1.mp4&quot; autoplay muted loop></video>  </div> </section></p>
+
+<p><section id=&quot;projects&quot;>  <h2>Projects</h2>  <div class=&quot;video-container fade-in&quot;>  <video src=&quot;clip_2.mp4&quot; autoplay muted loop></video>  </div>  <div class=&quot;video-container fade-in&quot;>  <video src=&quot;clip_3.mp4&quot; autoplay muted loop></video>  </div> </section></p>
+
+<p><section id=&quot;contact&quot;>  <h2>Contact</h2>  <p>If you'd like to get in touch, feel free to reach out via email or follow me on social media.</p>  <div class=&quot;video-container fade-in&quot;>  <video src=&quot;clip_4.mp4&quot; autoplay muted loop></video>  </div> </section></p>
+
+<p><script>  document.addEventListener('scroll', function() {  const fadeInElements = document.querySelectorAll('.fade-in');  fadeInElements.forEach(element => {  const rect = element.getBoundingClientRect();  if (rect.top < window.innerHeight - 100) {  element.classList.add('visible');  }  });  }); </script></p>
+
+<p></body> </html></p>
